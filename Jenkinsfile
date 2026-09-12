@@ -19,11 +19,6 @@ pipeline{
                 dockerpush("dockerHubCreds","notes-app","latest")
             }
         }
-        stage("Deploy"){
-            steps{
-                deploy()
-            }
-        }
         
     }
 }
